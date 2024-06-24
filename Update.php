@@ -55,7 +55,7 @@ include("dbconfig.php");
 
             <?php if ($userData) : ?>
                 <br>
-                <form action="" method="POST">
+                <form action="updatequery.php" method="POST">
                     <input type="hidden" name="id" value="<?php echo $userId; ?>">
                     <label for="firstname">First Name:</label>
                     <input type="text" id="firstname" name="firstname" value="<?php echo htmlspecialchars($userData['username']); ?>"><br><br>
@@ -63,7 +63,19 @@ include("dbconfig.php");
                     <input type="text" id="lastname" name="lastname" value="<?php echo htmlspecialchars($userData['email']); ?>"><br><br>
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email" value="<?php echo htmlspecialchars($userData['password']); ?>"><br><br>
-                    <input type="submit" value="Update" class="btn btn-danger">
+                    <input type="submit" value="Update" class="btn btn-danger" name="updatebtn">
+
+
+
+
+
+
+
+
+
+
+
+
                 </form>
             <?php else : ?>
                 <p>No user found with the specified ID.</p>

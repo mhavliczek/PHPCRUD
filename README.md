@@ -1,4 +1,6 @@
-# Primero crear la base de datos 
+#  Crud en PHP muy pero muy basico
+
+1.-Primero crear la base de datos mysql
 
 $servername = "localhost";
 $username = "root";

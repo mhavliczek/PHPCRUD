@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "bat7";
+$dbname = "crudbasico";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
